@@ -1,0 +1,4 @@
+# Remplace par ton nom de domaine (HTTPS automatique, WebSocket inclus)
+ton-domaine.example.com {
+    reverse_proxy localhost:3000
+}
