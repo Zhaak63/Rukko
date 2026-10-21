@@ -1,38 +1,65 @@
-# Arena FPS — Discord Activity (2 à 5 joueurs)
+<div align="center">
+  <img src="banner.png" alt="Rukko banner" width="100%">
+  <br>
+  <h1>Rukko</h1>
+  <p><strong>A fast-paced FPS experience, directly on Discord.</strong></p>
+  <p>
+    <img src="https://img.shields.io/badge/status-in%20development-ff3038?style=flat-square" alt="Status: In development">
+    <img src="https://img.shields.io/badge/playtesting-private-ff3038?style=flat-square" alt="Private playtesting">
+  </p>
+</div>
 
-Serveur autoritaire (Node + ws) + client Three.js. Une partie = un salon vocal (`instanceId`).
-Règles : 10 kills ou 5 min, headshot = 50 dmg, corps = 25, 12 balles, rechargement 1,3 s, respawn 2 s.
+---
 
-## 1. Application Discord
-1. https://discord.com/developers/applications → New Application
-2. OAuth2 : copie **Client ID** et **Client Secret**
-3. Activities → Settings : active **Enable Activities**
-4. Activities → URL Mappings : `/` → l'hôte de ton tunnel/serveur (sans https://)
+## About
 
-## 2. Installation
-```
-npm install
-cp .env.example .env     # remplis ID + secret
-```
+Rukko is a Discord-based FPS game inspired by fast-paced browser shooters like Krunker.io. Compete against other players, test your skills, and experience intense matches.
 
-## 3. Test local rapide (hors Discord)
-```
-npm run dev
-```
-Ouvre http://localhost:5173/?room=test dans 2 onglets.
+Rukko is currently in development. Playtesters help identify bugs, share feedback, and shape the game's future before its official release.
 
-## 4. Test dans Discord
-```
-npm run dev
-cloudflared tunnel --url http://localhost:5173
-```
-Mets l'hôte `xxxx.trycloudflare.com` dans l'URL Mapping `/`, puis dans un salon vocal : icône fusée → ton activité.
+## Features
 
-## 5. Production
-```
-npm run build
-npm start        # sert dist/ + WebSocket sur le port 3000
-```
-Héberge sur Render/Fly/Railway (variables d'env à renseigner) et mets son domaine dans l'URL Mapping.
+- Fast-paced FPS gameplay
+- Competitive matches
+- Discord-focused experience
+- Early access for selected playtesters
+- Community feedback and bug reporting
 
-Clavier : ZQSD (AZERTY) ou WASD, Espace = saut, clic = tir, R = recharger, Échap = souris.
+*Features may change during development.*
+
+## Playtesting
+
+Rukko is currently in private testing. Selected playtesters may receive:
+
+- Early access to the game and upcoming versions
+- The opportunity to report bugs
+- The chance to suggest improvements and influence development
+
+## Roadmap
+
+- [x] Initial development
+- [ ] Private playtesting
+- [ ] Bug fixes and gameplay improvements
+- [ ] New features and content
+- [ ] Official release
+
+*The roadmap is subject to change.*
+
+## Bug Reports & Feedback
+
+If you are an authorized playtester, report bugs and share feedback through the project's designated testing channels. If GitHub Issues are enabled, you can also submit an issue there.
+
+## Development
+
+More details about the technology stack, project setup, and contribution process will be added as development progresses.
+
+## License
+
+No license has been specified yet. All rights remain with the project owner unless stated otherwise.
+
+---
+
+<div align="center">
+  <strong>Rukko</strong><br>
+  Built for competition. Shaped by the community.
+</div>
